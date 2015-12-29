@@ -102,21 +102,25 @@ public class Demo0View extends View {
         int contentWidth = getWidth() - paddingLeft - paddingRight;
         int contentHeight = getHeight() - paddingTop - paddingBottom;
 
+        //画布上写字
         // Draw the text at (x,y).
         canvas.drawText(mExampleString,
                 paddingLeft + (contentWidth - mTextWidth) / 2,
                 paddingTop + (contentHeight + mTextHeight) / 2,
                 mTextPaint);
 
-        canvas.drawCircle((contentWidth) / 2, (contentHeight) / 2, 20,circlePaint);
+        //画布上画圆
+        canvas.drawCircle((contentWidth) / 2, (contentHeight) / 2, 10, circlePaint);
 
 
+        //画布上画mExampleDrawable,如果mExampleDrawable是不透明的，就把之前的字和圆覆盖了。
         // Draw the example drawable on top of the text.
         if (mExampleDrawable != null) {
             mExampleDrawable.setBounds(paddingLeft, paddingTop,
                     paddingLeft + contentWidth, paddingTop + contentHeight);
             mExampleDrawable.draw(canvas);
         }
+
     }
 
     /**

@@ -12,16 +12,27 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+
         <info.ipeanut.customviewdemo.Demo0View
             android:layout_width="300dp"
             android:layout_height="300dp"
-            android:background="#555"
-            android:paddingBottom="40dp"
-            android:paddingLeft="20dp"
+            android:background="#ccc"
             app:exampleColor="#33b5e5"
             app:exampleDimension="24sp"
-            app:exampleDrawable="@android:drawable/ic_menu_add"
+            app:exampleDrawable="@drawable/rect"
             app:exampleString="Hello, Demo0View" />
+
+        <!-- -->
+        <!--<info.ipeanut.customviewdemo.Demo0View-->
+            <!--android:layout_width="300dp"-->
+            <!--android:layout_height="300dp"-->
+            <!--android:background="#555"-->
+            <!--android:paddingBottom="40dp"-->
+            <!--android:paddingLeft="20dp"-->
+            <!--app:exampleColor="#33b5e5"-->
+            <!--app:exampleDimension="24sp"-->
+            <!--app:exampleDrawable="@android:drawable/ic_menu_add"-->
+            <!--app:exampleString="Hello, Demo0View" />-->
 
 
 
